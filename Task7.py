@@ -1,0 +1,15 @@
+f = open("Employee.txt","w")
+f.write("emp1:Manager,emp2:analyst,emp3 =developer")
+f.close()
+print("file created")
+
+f = open("Employee.txt","r")
+const = f.read()
+print(const)
+
+f = open("Employee.txt","a")
+f.write("\nemp4:newemp,emp5:newemp")
+f.close()
+f = open("Employee.txt","r")
+c = f.read()
+print(c)
